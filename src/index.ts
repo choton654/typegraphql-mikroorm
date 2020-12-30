@@ -14,7 +14,7 @@ app.use(express.urlencoded({ limit: "50mb" }));
 
 const schema = buildSchemaSync({
   resolvers: [AppResolver],
-  // emitSchemaFile: path.resolve(__dirname, "schema.gql"),
+  emitSchemaFile: true,
   validate: false,
 });
 
